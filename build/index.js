@@ -171,7 +171,14 @@ function App() {
       /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(import_react2.Links, {})
     ] }),
     /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)("body", { className: "h-full bg-black font-serif text-white", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(import_react_router_dom.Link, { className: "absolute left-0 top-0 z-50 m-4", to: "/", children: "index" }),
+      /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(
+        import_react_router_dom.Link,
+        {
+          className: "absolute left-0 top-0 z-50 m-4",
+          to: "/demos/zettelkablooey",
+          children: "index"
+        }
+      ),
       /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(import_react2.Outlet, {}),
       /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(import_react2.ScrollRestoration, {}),
       /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(import_react2.Scripts, {}),
@@ -180,9 +187,9 @@ function App() {
   ] });
 }
 
-// app/routes/growth-from-inside.tsx
-var growth_from_inside_exports = {};
-__export(growth_from_inside_exports, {
+// app/routes/demos.zettelkablooey.growth-from-inside.tsx
+var demos_zettelkablooey_growth_from_inside_exports = {};
+__export(demos_zettelkablooey_growth_from_inside_exports, {
   default: () => GrowthFromInside,
   loader: () => loader2
 });
@@ -294,9 +301,9 @@ function MyLink({
   );
 }
 
-// app/routes/_index.tsx
-var index_exports = {};
-__export(index_exports, {
+// app/routes/demos.zettelkablooey._index.tsx
+var demos_zettelkablooey_index_exports = {};
+__export(demos_zettelkablooey_index_exports, {
   default: () => Index,
   loader: () => loader,
   text: () => text
@@ -345,7 +352,7 @@ var generatePrompt = async (prompt, config = {
   return readResponse(prompt) || await response;
 };
 
-// app/routes/_index.tsx
+// app/routes/demos.zettelkablooey._index.tsx
 var import_text = __toESM(require_text()), import_jsx_runtime5 = require("react/jsx-runtime");
 function Index() {
   return /* @__PURE__ */ (0, import_jsx_runtime5.jsx)(import_react8.Suspense, { fallback: /* @__PURE__ */ (0, import_jsx_runtime5.jsx)(import_jsx_runtime5.Fragment, {}), children: /* @__PURE__ */ (0, import_jsx_runtime5.jsx)(ClientIndex, {}) });
@@ -607,7 +614,7 @@ function ClientGptMesh({
     ),
     children.map((child, i) => {
       var _a;
-      let splitChildren = child.props.children.split(" "), link = import_lodash6.default.random(splitChildren.length), newLink = /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(MyLink, { to: "/" + ((_a = import_lodash6.default.sample(text)) == null ? void 0 : _a.id), children: splitChildren[link] });
+      let splitChildren = child.props.children.split(" "), link = import_lodash6.default.random(splitChildren.length), newLink = /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(MyLink, { to: "/demos/zettelkablooey/" + ((_a = import_lodash6.default.sample(text)) == null ? void 0 : _a.id), children: splitChildren[link] });
       return /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)(import_react11.Fragment, { children: [
         /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(MorphSpan, { children: formattedGptText[i] }),
         (0, import_react11.cloneElement)(child, {
@@ -631,7 +638,7 @@ function Line({
   return /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("span", { className: "relative z-10", children });
 }
 
-// app/routes/growth-from-inside.tsx
+// app/routes/demos.zettelkablooey.growth-from-inside.tsx
 var import_jsx_runtime9 = require("react/jsx-runtime");
 async function loader2() {
   return await generatePrompt("Do you have to throw up?");
@@ -649,9 +656,9 @@ function GrowthFromInside() {
   ] });
 }
 
-// app/routes/order-disorder.tsx
-var order_disorder_exports = {};
-__export(order_disorder_exports, {
+// app/routes/demos.zettelkablooey.order-disorder.tsx
+var demos_zettelkablooey_order_disorder_exports = {};
+__export(demos_zettelkablooey_order_disorder_exports, {
   default: () => Ordering,
   loader: () => loader3
 });
@@ -674,9 +681,9 @@ function Ordering() {
   ] });
 }
 
-// app/routes/communication.tsx
-var communication_exports = {};
-__export(communication_exports, {
+// app/routes/demos.zettelkablooey.communication.tsx
+var demos_zettelkablooey_communication_exports = {};
+__export(demos_zettelkablooey_communication_exports, {
   default: () => Communication,
   loader: () => loader4
 });
@@ -699,9 +706,9 @@ function Communication() {
   ] });
 }
 
-// app/routes/without-order.tsx
-var without_order_exports = {};
-__export(without_order_exports, {
+// app/routes/demos.zettelkablooey.without-order.tsx
+var demos_zettelkablooey_without_order_exports = {};
+__export(demos_zettelkablooey_without_order_exports, {
   default: () => WithoutOrder,
   loader: () => loader5
 });
@@ -723,9 +730,9 @@ function WithoutOrder() {
   ] });
 }
 
-// app/routes/zettelkasten.tsx
-var zettelkasten_exports = {};
-__export(zettelkasten_exports, {
+// app/routes/demos.zettelkablooey.zettelkasten.tsx
+var demos_zettelkablooey_zettelkasten_exports = {};
+__export(demos_zettelkablooey_zettelkasten_exports, {
   default: () => Zettelkasten,
   loader: () => loader6
 });
@@ -746,9 +753,9 @@ function Zettelkasten() {
   ] });
 }
 
-// app/routes/alter-ego.tsx
-var alter_ego_exports = {};
-__export(alter_ego_exports, {
+// app/routes/demos.zettelkablooey.alter-ego.tsx
+var demos_zettelkablooey_alter_ego_exports = {};
+__export(demos_zettelkablooey_alter_ego_exports, {
   default: () => Assured,
   loader: () => loader7
 });
@@ -770,9 +777,9 @@ function Assured() {
   ] });
 }
 
-// app/routes/no-answer.tsx
-var no_answer_exports = {};
-__export(no_answer_exports, {
+// app/routes/demos.zettelkablooey.no-answer.tsx
+var demos_zettelkablooey_no_answer_exports = {};
+__export(demos_zettelkablooey_no_answer_exports, {
   default: () => NoAnswer,
   loader: () => loader8
 });
@@ -795,9 +802,9 @@ function NoAnswer() {
   ] });
 }
 
-// app/routes/ordering.tsx
-var ordering_exports = {};
-__export(ordering_exports, {
+// app/routes/demos.zettelkablooey.ordering.tsx
+var demos_zettelkablooey_ordering_exports = {};
+__export(demos_zettelkablooey_ordering_exports, {
   default: () => Ordering2,
   loader: () => loader9
 });
@@ -819,9 +826,9 @@ function Ordering2() {
   ] });
 }
 
-// app/routes/registry.tsx
-var registry_exports = {};
-__export(registry_exports, {
+// app/routes/demos.zettelkablooey.registry.tsx
+var demos_zettelkablooey_registry_exports = {};
+__export(demos_zettelkablooey_registry_exports, {
   default: () => Registry,
   loader: () => loader10
 });
@@ -844,9 +851,9 @@ function Registry() {
   ] });
 }
 
-// app/routes/assured.tsx
-var assured_exports = {};
-__export(assured_exports, {
+// app/routes/demos.zettelkablooey.assured.tsx
+var demos_zettelkablooey_assured_exports = {};
+__export(demos_zettelkablooey_assured_exports, {
   default: () => Assured2,
   loader: () => loader11
 });
@@ -867,9 +874,9 @@ function Assured2() {
   ] });
 }
 
-// app/routes/linking.tsx
-var linking_exports = {};
-__export(linking_exports, {
+// app/routes/demos.zettelkablooey.linking.tsx
+var demos_zettelkablooey_linking_exports = {};
+__export(demos_zettelkablooey_linking_exports, {
   default: () => Linking,
   loader: () => loader12
 });
@@ -890,9 +897,9 @@ function Linking() {
   ] });
 }
 
-// app/routes/systems.tsx
-var systems_exports = {};
-__export(systems_exports, {
+// app/routes/demos.zettelkablooey.systems.tsx
+var demos_zettelkablooey_systems_exports = {};
+__export(demos_zettelkablooey_systems_exports, {
   default: () => Systems,
   loader: () => loader13
 });
@@ -914,9 +921,9 @@ function Systems() {
   ] });
 }
 
-// app/routes/chance.tsx
-var chance_exports = {};
-__export(chance_exports, {
+// app/routes/demos.zettelkablooey.chance.tsx
+var demos_zettelkablooey_chance_exports = {};
+__export(demos_zettelkablooey_chance_exports, {
   default: () => Chance,
   loader: () => loader14
 });
@@ -938,7 +945,7 @@ function Chance() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-VOYMZQGO.js", imports: ["/build/_shared/chunk-JFFRORDL.js", "/build/_shared/chunk-XRCSBRXM.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-Q2ULAA36.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-U66KLGPC.js", imports: ["/build/_shared/chunk-5LSUJJHL.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/alter-ego": { id: "routes/alter-ego", parentId: "root", path: "alter-ego", index: void 0, caseSensitive: void 0, module: "/build/routes/alter-ego-7U2ZU75Z.js", imports: ["/build/_shared/chunk-YHLO236S.js", "/build/_shared/chunk-5LSUJJHL.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/assured": { id: "routes/assured", parentId: "root", path: "assured", index: void 0, caseSensitive: void 0, module: "/build/routes/assured-A3BIYT4U.js", imports: ["/build/_shared/chunk-YHLO236S.js", "/build/_shared/chunk-5LSUJJHL.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/chance": { id: "routes/chance", parentId: "root", path: "chance", index: void 0, caseSensitive: void 0, module: "/build/routes/chance-D5ZXR4MG.js", imports: ["/build/_shared/chunk-YHLO236S.js", "/build/_shared/chunk-5LSUJJHL.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/communication": { id: "routes/communication", parentId: "root", path: "communication", index: void 0, caseSensitive: void 0, module: "/build/routes/communication-4LSSNLTW.js", imports: ["/build/_shared/chunk-YHLO236S.js", "/build/_shared/chunk-5LSUJJHL.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/growth-from-inside": { id: "routes/growth-from-inside", parentId: "root", path: "growth-from-inside", index: void 0, caseSensitive: void 0, module: "/build/routes/growth-from-inside-3INCGYKS.js", imports: ["/build/_shared/chunk-YHLO236S.js", "/build/_shared/chunk-5LSUJJHL.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/linking": { id: "routes/linking", parentId: "root", path: "linking", index: void 0, caseSensitive: void 0, module: "/build/routes/linking-EDRRSYHH.js", imports: ["/build/_shared/chunk-YHLO236S.js", "/build/_shared/chunk-5LSUJJHL.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/no-answer": { id: "routes/no-answer", parentId: "root", path: "no-answer", index: void 0, caseSensitive: void 0, module: "/build/routes/no-answer-J26W2SFH.js", imports: ["/build/_shared/chunk-YHLO236S.js", "/build/_shared/chunk-5LSUJJHL.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/order-disorder": { id: "routes/order-disorder", parentId: "root", path: "order-disorder", index: void 0, caseSensitive: void 0, module: "/build/routes/order-disorder-Y3UGYNGW.js", imports: ["/build/_shared/chunk-YHLO236S.js", "/build/_shared/chunk-5LSUJJHL.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/ordering": { id: "routes/ordering", parentId: "root", path: "ordering", index: void 0, caseSensitive: void 0, module: "/build/routes/ordering-P6S26RU2.js", imports: ["/build/_shared/chunk-YHLO236S.js", "/build/_shared/chunk-5LSUJJHL.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/registry": { id: "routes/registry", parentId: "root", path: "registry", index: void 0, caseSensitive: void 0, module: "/build/routes/registry-ELRB7T6O.js", imports: ["/build/_shared/chunk-YHLO236S.js", "/build/_shared/chunk-5LSUJJHL.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/systems": { id: "routes/systems", parentId: "root", path: "systems", index: void 0, caseSensitive: void 0, module: "/build/routes/systems-SUD6ZVAQ.js", imports: ["/build/_shared/chunk-YHLO236S.js", "/build/_shared/chunk-5LSUJJHL.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/without-order": { id: "routes/without-order", parentId: "root", path: "without-order", index: void 0, caseSensitive: void 0, module: "/build/routes/without-order-JJF44XSP.js", imports: ["/build/_shared/chunk-YHLO236S.js", "/build/_shared/chunk-5LSUJJHL.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/zettelkasten": { id: "routes/zettelkasten", parentId: "root", path: "zettelkasten", index: void 0, caseSensitive: void 0, module: "/build/routes/zettelkasten-5XUU2EKU.js", imports: ["/build/_shared/chunk-YHLO236S.js", "/build/_shared/chunk-5LSUJJHL.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "6dd06523", hmr: void 0, url: "/build/manifest-6DD06523.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-VOYMZQGO.js", imports: ["/build/_shared/chunk-JFFRORDL.js", "/build/_shared/chunk-XRCSBRXM.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-2ZSTMO3J.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/demos.zettelkablooey._index": { id: "routes/demos.zettelkablooey._index", parentId: "root", path: "demos/zettelkablooey", index: !0, caseSensitive: void 0, module: "/build/routes/demos.zettelkablooey._index-3C5QHHCV.js", imports: ["/build/_shared/chunk-UXK6PNSR.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/demos.zettelkablooey.alter-ego": { id: "routes/demos.zettelkablooey.alter-ego", parentId: "root", path: "demos/zettelkablooey/alter-ego", index: void 0, caseSensitive: void 0, module: "/build/routes/demos.zettelkablooey.alter-ego-CBIQN3AO.js", imports: ["/build/_shared/chunk-3KNGHLPF.js", "/build/_shared/chunk-UXK6PNSR.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/demos.zettelkablooey.assured": { id: "routes/demos.zettelkablooey.assured", parentId: "root", path: "demos/zettelkablooey/assured", index: void 0, caseSensitive: void 0, module: "/build/routes/demos.zettelkablooey.assured-6CMLIEVP.js", imports: ["/build/_shared/chunk-3KNGHLPF.js", "/build/_shared/chunk-UXK6PNSR.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/demos.zettelkablooey.chance": { id: "routes/demos.zettelkablooey.chance", parentId: "root", path: "demos/zettelkablooey/chance", index: void 0, caseSensitive: void 0, module: "/build/routes/demos.zettelkablooey.chance-FJ2PY3KR.js", imports: ["/build/_shared/chunk-3KNGHLPF.js", "/build/_shared/chunk-UXK6PNSR.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/demos.zettelkablooey.communication": { id: "routes/demos.zettelkablooey.communication", parentId: "root", path: "demos/zettelkablooey/communication", index: void 0, caseSensitive: void 0, module: "/build/routes/demos.zettelkablooey.communication-Y7O2ANAY.js", imports: ["/build/_shared/chunk-3KNGHLPF.js", "/build/_shared/chunk-UXK6PNSR.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/demos.zettelkablooey.growth-from-inside": { id: "routes/demos.zettelkablooey.growth-from-inside", parentId: "root", path: "demos/zettelkablooey/growth-from-inside", index: void 0, caseSensitive: void 0, module: "/build/routes/demos.zettelkablooey.growth-from-inside-3NUJ43GQ.js", imports: ["/build/_shared/chunk-3KNGHLPF.js", "/build/_shared/chunk-UXK6PNSR.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/demos.zettelkablooey.linking": { id: "routes/demos.zettelkablooey.linking", parentId: "root", path: "demos/zettelkablooey/linking", index: void 0, caseSensitive: void 0, module: "/build/routes/demos.zettelkablooey.linking-JHYD6JGV.js", imports: ["/build/_shared/chunk-3KNGHLPF.js", "/build/_shared/chunk-UXK6PNSR.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/demos.zettelkablooey.no-answer": { id: "routes/demos.zettelkablooey.no-answer", parentId: "root", path: "demos/zettelkablooey/no-answer", index: void 0, caseSensitive: void 0, module: "/build/routes/demos.zettelkablooey.no-answer-4IKP3AI5.js", imports: ["/build/_shared/chunk-3KNGHLPF.js", "/build/_shared/chunk-UXK6PNSR.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/demos.zettelkablooey.order-disorder": { id: "routes/demos.zettelkablooey.order-disorder", parentId: "root", path: "demos/zettelkablooey/order-disorder", index: void 0, caseSensitive: void 0, module: "/build/routes/demos.zettelkablooey.order-disorder-HGLQ634B.js", imports: ["/build/_shared/chunk-3KNGHLPF.js", "/build/_shared/chunk-UXK6PNSR.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/demos.zettelkablooey.ordering": { id: "routes/demos.zettelkablooey.ordering", parentId: "root", path: "demos/zettelkablooey/ordering", index: void 0, caseSensitive: void 0, module: "/build/routes/demos.zettelkablooey.ordering-JRPF6IOU.js", imports: ["/build/_shared/chunk-3KNGHLPF.js", "/build/_shared/chunk-UXK6PNSR.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/demos.zettelkablooey.registry": { id: "routes/demos.zettelkablooey.registry", parentId: "root", path: "demos/zettelkablooey/registry", index: void 0, caseSensitive: void 0, module: "/build/routes/demos.zettelkablooey.registry-SRVIKOVW.js", imports: ["/build/_shared/chunk-3KNGHLPF.js", "/build/_shared/chunk-UXK6PNSR.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/demos.zettelkablooey.systems": { id: "routes/demos.zettelkablooey.systems", parentId: "root", path: "demos/zettelkablooey/systems", index: void 0, caseSensitive: void 0, module: "/build/routes/demos.zettelkablooey.systems-AO6SGEVJ.js", imports: ["/build/_shared/chunk-3KNGHLPF.js", "/build/_shared/chunk-UXK6PNSR.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/demos.zettelkablooey.without-order": { id: "routes/demos.zettelkablooey.without-order", parentId: "root", path: "demos/zettelkablooey/without-order", index: void 0, caseSensitive: void 0, module: "/build/routes/demos.zettelkablooey.without-order-NCE6BQ7K.js", imports: ["/build/_shared/chunk-3KNGHLPF.js", "/build/_shared/chunk-UXK6PNSR.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/demos.zettelkablooey.zettelkasten": { id: "routes/demos.zettelkablooey.zettelkasten", parentId: "root", path: "demos/zettelkablooey/zettelkasten", index: void 0, caseSensitive: void 0, module: "/build/routes/demos.zettelkablooey.zettelkasten-PSSKYMXS.js", imports: ["/build/_shared/chunk-3KNGHLPF.js", "/build/_shared/chunk-UXK6PNSR.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "ec806ac3", hmr: void 0, url: "/build/manifest-EC806AC3.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", future = { v2_dev: !1, unstable_postcss: !1, unstable_tailwind: !1, v2_errorBoundary: !0, v2_headers: !0, v2_meta: !0, v2_normalizeFormMethod: !0, v2_routeConvention: !0 }, publicPath = "/build/", entry = { module: entry_server_react_stream_exports }, routes = {
@@ -950,117 +957,117 @@ var assetsBuildDirectory = "public/build", future = { v2_dev: !1, unstable_postc
     caseSensitive: void 0,
     module: root_exports
   },
-  "routes/growth-from-inside": {
-    id: "routes/growth-from-inside",
+  "routes/demos.zettelkablooey.growth-from-inside": {
+    id: "routes/demos.zettelkablooey.growth-from-inside",
     parentId: "root",
-    path: "growth-from-inside",
+    path: "demos/zettelkablooey/growth-from-inside",
     index: void 0,
     caseSensitive: void 0,
-    module: growth_from_inside_exports
+    module: demos_zettelkablooey_growth_from_inside_exports
   },
-  "routes/order-disorder": {
-    id: "routes/order-disorder",
+  "routes/demos.zettelkablooey.order-disorder": {
+    id: "routes/demos.zettelkablooey.order-disorder",
     parentId: "root",
-    path: "order-disorder",
+    path: "demos/zettelkablooey/order-disorder",
     index: void 0,
     caseSensitive: void 0,
-    module: order_disorder_exports
+    module: demos_zettelkablooey_order_disorder_exports
   },
-  "routes/communication": {
-    id: "routes/communication",
+  "routes/demos.zettelkablooey.communication": {
+    id: "routes/demos.zettelkablooey.communication",
     parentId: "root",
-    path: "communication",
+    path: "demos/zettelkablooey/communication",
     index: void 0,
     caseSensitive: void 0,
-    module: communication_exports
+    module: demos_zettelkablooey_communication_exports
   },
-  "routes/without-order": {
-    id: "routes/without-order",
+  "routes/demos.zettelkablooey.without-order": {
+    id: "routes/demos.zettelkablooey.without-order",
     parentId: "root",
-    path: "without-order",
+    path: "demos/zettelkablooey/without-order",
     index: void 0,
     caseSensitive: void 0,
-    module: without_order_exports
+    module: demos_zettelkablooey_without_order_exports
   },
-  "routes/zettelkasten": {
-    id: "routes/zettelkasten",
+  "routes/demos.zettelkablooey.zettelkasten": {
+    id: "routes/demos.zettelkablooey.zettelkasten",
     parentId: "root",
-    path: "zettelkasten",
+    path: "demos/zettelkablooey/zettelkasten",
     index: void 0,
     caseSensitive: void 0,
-    module: zettelkasten_exports
+    module: demos_zettelkablooey_zettelkasten_exports
   },
-  "routes/alter-ego": {
-    id: "routes/alter-ego",
+  "routes/demos.zettelkablooey.alter-ego": {
+    id: "routes/demos.zettelkablooey.alter-ego",
     parentId: "root",
-    path: "alter-ego",
+    path: "demos/zettelkablooey/alter-ego",
     index: void 0,
     caseSensitive: void 0,
-    module: alter_ego_exports
+    module: demos_zettelkablooey_alter_ego_exports
   },
-  "routes/no-answer": {
-    id: "routes/no-answer",
+  "routes/demos.zettelkablooey.no-answer": {
+    id: "routes/demos.zettelkablooey.no-answer",
     parentId: "root",
-    path: "no-answer",
+    path: "demos/zettelkablooey/no-answer",
     index: void 0,
     caseSensitive: void 0,
-    module: no_answer_exports
+    module: demos_zettelkablooey_no_answer_exports
   },
-  "routes/ordering": {
-    id: "routes/ordering",
+  "routes/demos.zettelkablooey.ordering": {
+    id: "routes/demos.zettelkablooey.ordering",
     parentId: "root",
-    path: "ordering",
+    path: "demos/zettelkablooey/ordering",
     index: void 0,
     caseSensitive: void 0,
-    module: ordering_exports
+    module: demos_zettelkablooey_ordering_exports
   },
-  "routes/registry": {
-    id: "routes/registry",
+  "routes/demos.zettelkablooey.registry": {
+    id: "routes/demos.zettelkablooey.registry",
     parentId: "root",
-    path: "registry",
+    path: "demos/zettelkablooey/registry",
     index: void 0,
     caseSensitive: void 0,
-    module: registry_exports
+    module: demos_zettelkablooey_registry_exports
   },
-  "routes/assured": {
-    id: "routes/assured",
+  "routes/demos.zettelkablooey.assured": {
+    id: "routes/demos.zettelkablooey.assured",
     parentId: "root",
-    path: "assured",
+    path: "demos/zettelkablooey/assured",
     index: void 0,
     caseSensitive: void 0,
-    module: assured_exports
+    module: demos_zettelkablooey_assured_exports
   },
-  "routes/linking": {
-    id: "routes/linking",
+  "routes/demos.zettelkablooey.linking": {
+    id: "routes/demos.zettelkablooey.linking",
     parentId: "root",
-    path: "linking",
+    path: "demos/zettelkablooey/linking",
     index: void 0,
     caseSensitive: void 0,
-    module: linking_exports
+    module: demos_zettelkablooey_linking_exports
   },
-  "routes/systems": {
-    id: "routes/systems",
+  "routes/demos.zettelkablooey.systems": {
+    id: "routes/demos.zettelkablooey.systems",
     parentId: "root",
-    path: "systems",
+    path: "demos/zettelkablooey/systems",
     index: void 0,
     caseSensitive: void 0,
-    module: systems_exports
+    module: demos_zettelkablooey_systems_exports
   },
-  "routes/_index": {
-    id: "routes/_index",
+  "routes/demos.zettelkablooey._index": {
+    id: "routes/demos.zettelkablooey._index",
     parentId: "root",
-    path: void 0,
+    path: "demos/zettelkablooey",
     index: !0,
     caseSensitive: void 0,
-    module: index_exports
+    module: demos_zettelkablooey_index_exports
   },
-  "routes/chance": {
-    id: "routes/chance",
+  "routes/demos.zettelkablooey.chance": {
+    id: "routes/demos.zettelkablooey.chance",
     parentId: "root",
-    path: "chance",
+    path: "demos/zettelkablooey/chance",
     index: void 0,
     caseSensitive: void 0,
-    module: chance_exports
+    module: demos_zettelkablooey_chance_exports
   }
 };
 // Annotate the CommonJS export names for ESM import in node:
